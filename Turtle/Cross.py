@@ -1,0 +1,40 @@
+import turtle
+t = turtle.Turtle()
+def drawcross():
+  t.fd(100)
+  t.lt(90)
+  t.fd(100)
+  t.lt(90)
+  t.fd(100)
+  t.rt(90)
+  t.fd(100)
+  t.lt(90)
+  t.fd(100)
+  t.lt(90)
+  t.fd(100)
+  t.rt(90)
+  t.fd(100)
+  t.lt(90)
+  t.fd(100)
+  t.lt(90)
+  t.fd(100)
+  t.rt(90)
+  t.fd(100)
+  t.lt(90)
+  t.fd(100)
+  t.lt(90)
+  t.fd(100)
+pass
+def move2location(x,y):
+  t.penup()
+  t.goto(x,y)
+  t.pendown()
+pass
+def main():
+  move2location(50,-50)
+  t.color("red")
+  t.begin_fill()
+  drawcross()
+  t.end_fill()
+pass
+main()
